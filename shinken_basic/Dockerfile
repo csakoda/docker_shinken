@@ -66,7 +66,7 @@ RUN         cd /usr/lib/nagios/plugins/ && \
                 chmod u+s check_apt restart_service check_ping check_icmp check_fping apt_update
 
 # Define mountable directories
-VOLUME      ["/etc/shinken/custom_configs", "/usr/local/custom_plugins"]
+#VOLUME      ["/etc/shinken/custom_configs", "/usr/local/custom_plugins"]
 
 # configure supervisor
 ADD         supervisor/conf.d/* /etc/supervisor/conf.d/
